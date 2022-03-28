@@ -7,14 +7,14 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(219, 69%, 56%);
-  --first-color-alt: hsl(219, 69%, 52%);
-  --title-color: hsl(219, 8%, 95%);
-  --text-color: hsl(219, 8%, 75%);
-  --text-color-light: hsl(219, 4%, 55%);
+  --first-color: rgba(65, 120, 220, 1);
+  --first-color-alt: rgba(48, 107, 217, 1);
+  --title-color: rgba(241, 242, 243, 1);
+  --text-color: rgba(186, 190, 196, 1);
+  --text-color-light: rgb(53%, 55%, 57%, 1);
   --white-color: #fff;
-  --body-color: hsl(219, 4%, 4%);
-  --container-color: hsl(219, 4%, 7%);
+  --body-color: rgba(10, 10, 11, 1);
+  --container-color: rgba(17, 18, 19, 1);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -109,7 +109,7 @@ img {
 }
 
 .shape {
-  background-color: hsla(219, 33%, 32%, .5);
+  background-color: rgba(56, 76, 112, 0.5);
   filter: blur(112px);
   border-radius: 50%;
 }
@@ -176,7 +176,7 @@ img {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background-color: hsla(0, 0%, 100%, .1);
+    background-color: rgba(255, 255, 255, 0.1);
     top: 0;
     right: -100%;
     width: 100%;
@@ -223,7 +223,7 @@ img {
 .scroll-header {
   border-radius: 0 0 1rem 1rem;
   background-color: var(--body-color);
-  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 1);
+  box-shadow: 0 2px 4px rgba(3, 3, 3, 0.1);
 }
 
 /* Active link */
@@ -310,7 +310,7 @@ img {
 
 .home__button {
   position: relative;
-  border: 2px solid hsl(158, 89%, 30%);
+  border: 2px solid rgba(8, 145, 95, 1);
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -325,12 +325,12 @@ img {
 
 .home__button::before {
   content: '';
-  border: 2px solid hsl(158, 98%, 43%);
+  border: 2px solid rgba(2, 217, 138, 1);
   width: 90px;
   height: 90px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  box-shadow: 0 0 12px rgba(2, 217, 138, 1);
   transition: .3s;
   animation: button 3s infinite;
 }
@@ -353,10 +353,10 @@ img {
 /* Button animate */
 @keyframes button {
   0% {
-    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+    box-shadow: 0 0 12px rgba(2, 217, 138, 1);
   }
   50% {
-    box-shadow: 0 0 24px hsl(158, 98%, 43%);
+    box-shadow: 0 0 24px rgba(2, 217, 138, 1);
   }
 }
 
@@ -394,7 +394,7 @@ img {
   position: absolute;
   right: 0;
   bottom: -2.5rem;
-  background-color: hsl(0, 0%, 100%, .1);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(16px);
   padding: 1rem .75rem;
   text-align: center;
